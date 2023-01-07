@@ -210,6 +210,15 @@ form.example input[type=text] {
    border-radius: .5rem;
 }
 
+.heading1 a{
+   text-decoration: none;
+   color: #ffffff;
+   font-size: 2rem;
+}
+
+.heading1 a:hover{
+   color: rgb(193, 243, 10);
+}
 .services .box-container .box .box1 img{
    /* margin:1rem 0; */
    height: 7rem;
@@ -256,6 +265,7 @@ form.example input[type=text] {
    margin:1rem 0;
 }
 
+
 .process .box-container .box h3{
    font-size: 2rem;
    color:var(--white);
@@ -292,12 +302,18 @@ form.example input[type=text] {
    border-radius: 50%;
 }
 
-.reviews .box-container .box p{
+.reviews .box-container .box h3{
+   padding:2rem 0 0;
+}
+
+.reviews .box-container .box ul{
    padding:2rem 0;
    line-height: 2;
    font-size: 1.5rem;
    color:var(--light-color);
    margin-bottom: 0;
+   align-items: center;
+   list-style: none;
 }
 
 .reviews .box-container .box .stars{
@@ -323,43 +339,8 @@ form.example input[type=text] {
    font-size: 1.5rem;
 }
 
-.contact form{
-   border-radius: .5rem;
-   background-color: var(--light-bg);
-   padding:2rem;
-   margin:0 auto;
-   max-width: 50rem;
-}
-
-.contact form .message{
-   margin-bottom: 2rem;
-   border-radius: .5rem;
-   background-color: var(--blue);
-   padding:1.2rem 1rem;
-   font-size: 1.7rem;
-   color:var(--white);
-   text-align: center;
-}
-
-.contact form .box{
-   width: 100%;
-   margin-top: 1rem;
-   margin-bottom: 2rem;
-   border-radius: .5rem;
-   background-color: var(--white);
-   padding:1.2rem 1.4rem;
-   font-size: 1.7rem;
-   color:var(--black);
-   text-transform: none;
-}
-
-.contact form span{
-   font-size: 1.7rem;
-   color:var(--black);
-}
-
 .footer{
-   background-color: var(--light-bg);
+   background-color: var(--white);
 }
 
 .footer .box-container{
@@ -401,6 +382,7 @@ form.example input[type=text] {
    margin-top: 2rem;
    font-size: 2rem;
    color:var(--light-color);
+   background-color:;
 }
 
 .footer .credit span{
