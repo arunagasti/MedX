@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+
+       
 :root{
-   --blue:#00b8b8;
+   --blue:#008787;
    --black:#333;
    --white:#fff;
    --light-color:#666;
@@ -51,7 +55,40 @@ section{
    font-weight: bolder;
    margin-bottom: 3rem;
 }
-
+form{
+   border: ;
+}
+form.example input[type=text] {
+   
+   padding: 10px;
+   font-size: 17px;
+   border: 1px solid grey;
+   float: left;
+   width: 80%;
+   background: #f1f1f1;
+ }
+ 
+ form.example button {
+   float: left;
+   width: 20%;
+   padding: 10px;
+   background: #2196F3;
+   color: white;
+   font-size: 17px;
+   border: 1px solid grey;
+   border-left: none;
+   cursor: pointer;
+ }
+ 
+ form.example button:hover {
+   background: #0b7dda;
+ }
+ 
+ form.example::after {
+   content: "";
+   clear: both;
+   display: table;
+ }
 .link-btn{
    display: inline-block;
    padding:1rem 3rem;
@@ -79,7 +116,7 @@ section{
 }
 
 .header .logo{
-   font-size: 2rem;
+   font-size: 3rem;
    color:var(--black);
 }
 
@@ -89,7 +126,7 @@ section{
 
 .header .nav a{
    margin:0 1rem;
-   font-size: 1.7rem;
+   font-size: 1.9rem;
    color:var(--black);
 }
 
@@ -105,7 +142,7 @@ section{
 }
 
 .home{
-   background:url(../images/home-bg.jpg) no-repeat;
+   background:url(../images/frontbg.jpg) no-repeat;
    background-size: cover;
    background-position: center;
 }
@@ -116,16 +153,19 @@ section{
 }
 
 .home .content h3{
-   font-size: 6rem;
+   font-size: 5rem;
    text-transform: uppercase;
    color:var(--black);
 }
 
 .home .content p{
    line-height: 2;
-   font-size: 1.5rem;
-   color:var(--light-color);
+   font-size: 2rem;
+   -webkit-text-fill-color:#333;
    padding:1rem 0;
+}
+.home .logo span{
+   color:var(--blue);
 }
 
 .about .row{
@@ -133,42 +173,54 @@ section{
 }
 
 .about .content span{
-   font-size: 2rem;
+   font-size: 2.6rem;
    color:var(--blue);
 }
 
 .about .content h3{
-   font-size: 3rem;
+   font-size: 3.3rem;
    color:var(--black);
    margin-top: 1rem;
 }
 
 .about .content p{
    padding:1rem 0;
-   font-size: 1.4rem;
+   font-size: 1.8rem;
    color:var(--light-color);
    line-height: 2;
 }
 
 .services{
    background-color: var(--light-bg);
+   
 }
 
 .services .box-container{
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
    gap:2rem;
+   
 }
 
 .services .box-container .box{
    text-align: center;
-   padding:2rem;
+   padding:4rem;
    background-color: var(--white);
    box-shadow: var(--box-shadow);
    border-radius: .5rem;
 }
 
-.services .box-container .box img{
+.services .box-container .box .box1 img{
+   /* margin:1rem 0; */
+   height: 7rem;
+}
+
+.services .box-container .box .box2 img{
+   /* margin:1rem 0; */
+   height: 6rem;
+}
+
+.services .box-container .box .box3 img{
    margin:1rem 0;
    height: 4rem;
 }
